@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12@sm">
+        <h1 style="color: crimson">Movie Rental</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4@sm col-3@md">
+        <div class="filters-group">
+          <label for="filters-search-input" class="filter-label">Search</label>
+          <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12@sm filters-group-wrap">
+        <div style="margin-top: 20px" class="filters-group">
+          <p class="filter-label">Category</p>
+          <div class="btn-group filter-options">
+            <button class="btn btn--primary" data-group="action">Action</button>
+            <button class="btn btn--primary" data-group="comedy">Comedy</button>
+            <button class="btn btn--primary" data-group="horror">Horror</button>
+            <button class="btn btn--primary" data-group="adventure">Adventure</button>
+          </div>
+        </div>
+        <fieldset class="filters-group">
+          <legend class="filter-label">Sort</legend>
+          <div class="btn-group sort-options">
+            <label class="btn active">
+              <input type="radio" name="sort-value" value="dom" checked /> Default
+            </label>
+            <label class="btn">
+              <input type="radio" name="sort-value" value="title" /> Title
+            </label>
+            <label class="btn">
+              <input type="radio" name="sort-value" value="date-created" /> Date Created
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="grid" class="row my-shuffle-container">
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["action"]' data-date-created="2019-04-30"
+        data-title="The Man Who Can">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/260367/pexels-photo-260367.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">The Man Who Can</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Action</p>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["action"]' data-date-created="2018-04-30"
+        data-title="The Last Solder">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/264146/pexels-photo-264146.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">The Last Solder</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Action</p>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["comedy"]' data-date-created="2017-04-30"
+        data-title="The Man Who Can">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">The Man with a banana!</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Comedy</p>
+          </div>
+        </div>
+      </figure>
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["comedy"]' data-date-created="2016-04-30"
+        data-title="The Man Who Can">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/209620/pexels-photo-209620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">A Wild Night Out</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Comedy</p>
+          </div>
+        </div>
+      </figure>
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["horror"]' data-date-created="2015-04-30"
+        data-title="Outcast">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/2190511/pexels-photo-2190511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">Outcast</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Horror</p>
+          </div>
+        </div>
+      </figure>
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["horror"]' data-date-created="2014-04-30"
+        data-title="Spooked">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/604694/pexels-photo-604694.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">Spooked</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Horror</p>
+          </div>
+        </div>
+      </figure>
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["horror"]' data-date-created="2017-09-30"
+        data-title="Mountain Man">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">Mountain Man</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Adventure</p>
+          </div>
+        </div>
+      </figure>
+      <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["horror"]' data-date-created="2010-04-30"
+        data-title="Swinging Away">
+        <div class="picture-item__inner">
+          <div class="aspect aspect--16x9">
+            <div class="aspect__inner">
+              <img src=""
+                srcset="https://images.pexels.com/photos/1122868/pexels-photo-1122868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="" />
+            </div>
+          </div>
+          <div class="picture-item__details">
+            <figcaption class="picture-item__title"><a href="" target="_blank" rel="noopener">Swinging Away</a>
+            </figcaption>
+            <p class="picture-item__tags hidden@xs">Adventure</p>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </div>
+  <script src='https://unpkg.com/shufflejs@5'></script>
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

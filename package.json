@@ -1,0 +1,21 @@
+{
+  "name": "Webdriverio-Applitools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js --spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^4.14.4"
+  },
+  "devDependencies": {
+    "@applitools/eyes.webdriverio": "^2.6.0",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "wdio-spec-reporter": "^0.1.5"
+  }
+}
